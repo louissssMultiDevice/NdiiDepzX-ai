@@ -1,0 +1,79 @@
+{
+  "name": "ndiidepzx-ai-backend",
+  "version": "2.0.0",
+  "description": "Super Advanced AI Chat System with Maximum Security",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "cluster": "node --experimental-cluster server.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "type-check": "tsc --noEmit",
+    "security-audit": "npm audit --audit-level high",
+    "docker:build": "docker build -t ndiidepzx-ai .",
+    "docker:run": "docker-compose up -d",
+    "deploy:prod": "node scripts/deploy.js --env production",
+    "monitor": "node scripts/monitor.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "googleapis": "^126.0.1",
+    "nodemailer": "^6.9.4",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "redis": "^4.6.7",
+    "bull": "^4.11.3",
+    "mongoose": "^7.5.0",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0",
+    "joi": "^17.9.2",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6",
+    "jest": "^29.6.1",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "security",
+    "authentication",
+    "whatsapp",
+    "gmail",
+    "otp",
+    "nodejs",
+    "express",
+    "react",
+    "futuristic"
+  ],
+  "author": "ndiidepzX Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louissssMultiDevice/ndiidepzx-ai.git"
+  }
+}
